@@ -1,6 +1,6 @@
 import { Component, createElement } from './framework'
 import { Carousel } from './carousel'
-import { TimeLine, Animation } from './animation'
+// import { TimeLine, Animation } from './animation'
 
 let d = [
     "https://static001.geekbang.org/resource/image/bb/21/bb38fb7c1073eaee1755f81131f11d21.jpg",
@@ -13,10 +13,10 @@ let a = <Carousel src={d}/>
 
 a.mountTo(document.body);
 
-let tl = new TimeLine();
-let animation = new Animation({ set a(v) { console.log(v) } }, 'a', 0, 100, 1000, null);
+// let tl = new TimeLine();
+// let animation = new Animation({ set a(v) { console.log(v) } }, 'a', 0, 100, 1000, null);
 
-window.tl = tl;
-window.animation = animation;
+// window.tl = tl;
+// window.animation = animation;
 
-tl.start();
+// tl.start();
