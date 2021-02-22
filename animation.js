@@ -54,7 +54,7 @@ export class TimeLine {
         this.state = "paused";
 
         this[PAUSE_START] = Date.now();
-        console.log(this[PAUSE_START])
+        // console.log(this[PAUSE_START])
         cancelAnimationFrame(this[TICK_HANDLER]);
     }
 
